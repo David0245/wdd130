@@ -1,7 +1,3 @@
-main {
-    max-width: 840px;
-}
-
 nav {
 
     background-color: darkblue;
@@ -18,6 +14,10 @@ nav a {
 h1 {
     color: darkblue;
 
+}
+
+main {
+    max-width: 840px;
 }
 
 main img {
