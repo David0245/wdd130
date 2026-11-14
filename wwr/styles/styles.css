@@ -1,0 +1,187 @@
+/* CSS Variables */
+:root {
+    --primary-color: #0b3954;
+    --secondary-color: #bfd7ea;
+    --accent1-color: #087e8b;
+    --accent2-color: #ffcc66;
+
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #f4f7f8;
+}
+
+/* Header, Main and Footer */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 15px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: var(--accent1-color);
+}
+
+/* Headings */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* General Spacing */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+/* Hero Background Image */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hero Heading */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Hero Article */
+.hero article {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--primary-color);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Hero Article Image */
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin: 0 0 10px 15px;
+    border: 2px solid var(--accent1-color);
+    padding: 3px;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
+}
+
+/* Sections */
+section {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+section p {
+    color: var(--primary-color);
+}
+
+/* Adventure Section */
+section:last-of-type {
+    background-color: var(--accent1-color);
+}
+
+section:last-of-type h2 {
+    color: white;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+}
+
+footer p {
+    color: white;
+}
+
+/* Social Media Links */
+.socialmedia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+}
