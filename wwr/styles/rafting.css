@@ -19,7 +19,7 @@
 /* Body */
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
     background-color: #f4f7f8;
 }
 
@@ -31,45 +31,41 @@ footer {
     margin: 0 auto;
 }
 
-/* Header */
+/* Header using CSS Grid */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 200px 1fr;
     align-items: center;
     background-color: var(--primary-color);
     padding: 15px 25px;
 }
 
+/* Header Logo */
 header img {
     width: 100px;
     height: auto;
 }
 
-/* Navigation */
+/* Navigation using Flexbox */
 header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0;
     padding: 0;
-    /* background-color: var(--secondary-color); */
+    background-color: var(--secondary-color);
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
+/* Navigation Links */
 nav a {
-    color: var(--accent2-color);
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
     padding: 15px;
 }
 
 nav a:hover {
-    color: white;
+    color: #ffffff;
     background-color: var(--accent1-color);
 }
 
@@ -80,19 +76,18 @@ h2 {
     color: var(--primary-color);
 }
 
-/* General Spacing */
-nav,
-p,
-section,
-article {
-    /* margin: 16px; */
-    padding: 8px;
-}
-
+/* Paragraphs */
 p {
     margin: 16px;
+    padding: 8px;
     line-height: 1.6;
+}
 
+/* General Section and Article Spacing */
+section,
+article {
+    margin: 16px;
+    padding: 8px;
 }
 
 /* Hero Section */
@@ -116,7 +111,7 @@ p {
     text-align: center;
     opacity: 0.85;
     background-color: var(--primary-color);
-    color: #fff;
+    color: #ffffff;
 }
 
 /* Hero Article */
@@ -129,7 +124,6 @@ p {
     color: var(--primary-color);
     padding: 15px;
     border-radius: 8px;
-    margin: 16px;
 }
 
 /* Hero Article Image */
@@ -140,58 +134,6 @@ p {
     margin: 0 0 10px 15px;
     border: 2px solid var(--accent1-color);
     padding: 3px;
-}
-
-/* Hero Heading */
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.85;
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
-/* Paragraphs */
-p {
-    line-height: 1.6;
-}
-
-/* Sections */
-section {
-    background-color: var(--secondary-color);
-    padding: 20px;
-    border-radius: 5px;
-}
-
-section h2 {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-section p {
-    color: var(--primary-color);
-}
-
-/* Adventure Section */
-section:last-of-type {
-    background-color: var(--accent1-color);
-}
-
-section:last-of-type h2 {
-    color: white;
-}
-
-/* Footer */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 15px;
 }
 
 /* History Section using CSS Grid */
@@ -248,10 +190,12 @@ footer {
 .adventures figure {
     text-align: center;
     margin: 0;
+    padding: 0;
 }
 
 /* Adventure Images */
 .adventures img {
+    display: block;
     width: 100%;
     height: 110px;
     object-fit: cover;
@@ -266,22 +210,40 @@ footer {
     margin-top: 8px;
 }
 
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 15px 25px;
+}
+
+/* Footer Paragraph */
 footer p {
-    color: white;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Social Media Navigation */
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Social Media Links */
-.socialmedia {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 .socialmedia a {
     text-decoration: none;
 }
 
+/* Social Media Images */
 .socialmedia img {
     width: 30px;
     height: 30px;
+    object-fit: contain;
 }
