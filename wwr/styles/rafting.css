@@ -37,7 +37,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
-    padding: 15px;
+    padding: 15px 25px;
 }
 
 header img {
@@ -46,6 +46,15 @@ header img {
 }
 
 /* Navigation */
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    /* background-color: var(--secondary-color); */
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -56,7 +65,7 @@ nav a {
     color: var(--accent2-color);
     text-decoration: none;
     font-weight: bold;
-    padding: 12px;
+    padding: 15px;
 }
 
 nav a:hover {
@@ -76,8 +85,14 @@ nav,
 p,
 section,
 article {
-    margin: 16px;
+    /* margin: 16px; */
     padding: 8px;
+}
+
+p {
+    margin: 16px;
+    line-height: 1.6;
+
 }
 
 /* Hero Section */
@@ -86,7 +101,7 @@ article {
 }
 
 /* Hero Background Image */
-.hero img {
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
@@ -114,6 +129,7 @@ article {
     color: var(--primary-color);
     padding: 15px;
     border-radius: 8px;
+    margin: 16px;
 }
 
 /* Hero Article Image */
@@ -124,6 +140,18 @@ article {
     margin: 0 0 10px 15px;
     border: 2px solid var(--accent1-color);
     padding: 3px;
+}
+
+/* Hero Heading */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 /* Paragraphs */
@@ -164,6 +192,78 @@ footer {
     background-color: var(--primary-color);
     color: white;
     padding: 15px;
+}
+
+/* History Section using CSS Grid */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* History Heading */
+.history h2 {
+    grid-column: 1 / 4;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* History Paragraphs */
+.history p {
+    color: var(--primary-color);
+    margin: 0;
+    padding: 10px;
+}
+
+/* History Image */
+.history img {
+    width: 100%;
+    height: auto;
+    border: 3px solid var(--primary-color);
+}
+
+/* Adventures Section */
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    background-color: #e9f2f7;
+    padding: 25px 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Adventures Heading */
+.adventures h2 {
+    grid-column: 1 / 6;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Adventure Figures */
+.adventures figure {
+    text-align: center;
+    margin: 0;
+}
+
+/* Adventure Images */
+.adventures img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+}
+
+/* Figure Captions */
+.adventures figcaption {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
 }
 
 footer p {
