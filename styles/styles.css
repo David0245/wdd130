@@ -21,7 +21,7 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 1rem;
 }
 
 h1 {
@@ -83,4 +83,29 @@ footer {
 
 .indent {
     padding-left: 2rem;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
 }
