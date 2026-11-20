@@ -5,9 +5,7 @@
     --primary-color: #0b3954;
     --secondary-color: #bfd7ea;
     --accent1-color: #087e8b;
-    --accent2-color: #ffcc66;
     --white-color: #ffffff;
-    --black-color: #000000;
 
     --heading-font: Georgia, "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -68,7 +66,7 @@ main {
     margin: 0 auto;
 }
 
-/* Headings */
+/* Headings and Paragraphs */
 h1,
 h2,
 h3 {
